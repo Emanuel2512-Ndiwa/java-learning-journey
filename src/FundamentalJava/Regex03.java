@@ -1,6 +1,6 @@
-package Liburan;
+package FundamentalJava;
 import javax.swing.JOptionPane;
-public class No04B {
+public class Regex03 {
       //membuat variabel STOP,JAVA dan INVALID dengan tipe datanya String 
     //serta acses modifier dari keempat tipe data ini adalah private yang artinya variabel ini hanya bisa di akses 
     //dari dalam kelas tmepat variabel aini di buat dan static ini menyatakan bahwa variabel ini milikny akelas bnukan miliknya object

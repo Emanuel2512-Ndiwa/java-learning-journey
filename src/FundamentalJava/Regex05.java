@@ -1,10 +1,10 @@
-package Liburan;
+package FundamentalJava;
 
 
 import javax.swing.JOptionPane;
 
 
-public class No04D {
+public class Regex05 {
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null, args, "Program Hapus Karakter", JOptionPane.INFORMATION_MESSAGE);
         String kalimat = "<html lang=\"id\">\r\n" + //

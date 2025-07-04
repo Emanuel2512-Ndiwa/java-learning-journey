@@ -1,4 +1,4 @@
-package Liburan;
+package FundamentalJava;
 
 import javax.swing.JOptionPane;
 //disini saya mengimport Joption 

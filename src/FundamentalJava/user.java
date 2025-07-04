@@ -1,6 +1,4 @@
-package Liburan;
-
-import javax.swing.*;
+package FundamentalJava;
 
 public interface user {
 

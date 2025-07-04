@@ -1,4 +1,4 @@
-package Liburan;
+package FundamentalJava;
 
 import java.util.Scanner;
 

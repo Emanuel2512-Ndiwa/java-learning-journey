@@ -1,6 +1,6 @@
-package Liburan;
+package FundamentalJava;
 
-public class No03 {
+public class Regex02 {
 
     public static void main(String args[]) {
         // Membuat variabel baru string dan mengisikannya
