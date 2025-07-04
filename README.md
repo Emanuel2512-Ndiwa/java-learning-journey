@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc5b304d213727a5be763e08d97ade60df7c7855
 
 # 📚 Java Learning Journey
 Halo! Selamat datang di repositori dokumentasi perjalanan belajar Java saya. Di sini, saya mendokumentasikan semua progres, latihan, dan proyek-proyek yang saya kerjakan untuk menguasai Java, baik dari materi perkuliahan maupun inisiatif belajar mandiri.
