@@ -1,0 +1,14 @@
+@startuml
+title Activity Diagram - Admin Memproses Cetakan
+
+|Admin|
+start
+:Login ke Sistem;
+:Melihat Daftar Transaksi Baru;
+:Memilih Transaksi dan Melihat Detail Dokumen;
+:Memproses Cetakan;
+|Sistem|
+:Memperbarui Status Transaksi;
+:Mencatat bahwa Dokumen\nTelah Diproses oleh Admin;
+stop
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+title Activity Diagram - Mahasiswa Mengunggah dan Mencetak Dokumen
+
+|Mahasiswa|
+start
+:Login ke Sistem;
+:Memilih Menu "Unggah Dokumen";
+:Input Nama File,\nJumlah Halaman,\nJenis Dokumen;
+|Sistem|
+:Simpan Data Dokumen;
+|Mahasiswa|
+:Memilih Menu "Cetak Dokumen";
+:Memilih File,\nKonfirmasi Halaman & Salinan;
+:Klik Tombol Cetak;
+|Sistem|
+:Mencatat Transaksi;
+:Menampilkan Total Harga;
+|Admin|
+:Admin Menerima Notifikasi;
+:Admin Memproses Pencetakan;
+stop
+
+@enduml

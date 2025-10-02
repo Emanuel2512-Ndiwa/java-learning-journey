@@ -1,0 +1,39 @@
+@startuml
+title Use Case Diagram - Sistem Fotokopi dan Print Mahasiswa
+left to right direction
+skinparam packageStyle rectangle
+
+actor Mahasiswa
+actor Admin
+
+rectangle "SISTEM FOTOKOPI & PRINT" {
+
+    usecase "Mendaftar Akun" as UC1
+    usecase "Login ke Sistem" as UC2
+    usecase "Mengunggah Dokumen" as UC3
+    usecase "Melakukan Pemesanan Cetak" as UC4
+    usecase "Mencatat Transaksi" as UC5
+    usecase "Melihat Riwayat Transaksi" as UC6
+
+    usecase "Menerima Pesanan" as UC7
+    usecase "Mengelola Proses Cetak" as UC8
+}
+
+' Relasi Mahasiswa
+Mahasiswa --> UC1
+Mahasiswa --> UC2
+Mahasiswa --> UC3
+Mahasiswa --> UC4
+Mahasiswa --> UC6
+
+' Relasi Admin
+Admin --> UC2
+Admin --> UC7
+Admin --> UC8
+Admin --> UC6
+
+' Relasi antar use case
+UC4 --> UC5 : <<include>>
+UC7 --> UC5 : <<include>>
+
+@enduml

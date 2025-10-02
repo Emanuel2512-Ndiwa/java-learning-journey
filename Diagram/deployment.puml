@@ -1,0 +1,39 @@
+@startuml
+title Deployment Diagram - Sistem Fotokopi dan Print Mahasiswa
+
+node "Client Device" <<Device>> {
+    artifact "Browser Mahasiswa" <<Artifact>>
+    artifact "Browser Admin" <<Artifact>>
+}
+
+node "Web Server" <<Node>> {
+    artifact "Apache/Nginx" <<Artifact>>
+    interface "HTTP Interface" as httpIF
+}
+
+node "Application Server" <<Node>> {
+    artifact "Laravel App" <<Artifact>>
+    component "Upload Dokumen Service"
+    component "Cetak Dokumen Service"
+    component "Transaksi Service"
+    interface "Internal API" as apiIF
+}
+
+node "Database Server" <<Node>> {
+    artifact "MySQL DBMS" <<Artifact>>
+    database "fotocopyDB" <<Database>>
+}
+
+' Alur komunikasi
+"Browser Mahasiswa" --> httpIF : Akses halaman utama\nLogin, Upload, Cetak
+"Browser Admin" --> httpIF : Akses panel admin
+
+httpIF --> apiIF : Routing Request
+apiIF --> "fotocopyDB" : Query via ORM (Eloquent)
+
+' Containment
+httpIF ..> "Apache/Nginx"
+apiIF ..> "Laravel App"
+"fotocopyDB" ..> "MySQL DBMS"
+
+@enduml

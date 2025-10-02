@@ -1,0 +1,57 @@
+@startuml
+title Class Diagram - Sistem Fotokopi dan Print Mahasiswa
+skinparam classAttributeIconSize 0
+skinparam classIconSize 0
+
+class Mahasiswa {
+    - id_mahasiswa: INT
+    - nama: VARCHAR
+    - nim: VARCHAR
+    + registrasi(): void
+    + login(): boolean
+    + unggahDokumen(): void
+    + buatPemesanan(): void
+    + lihatRiwayatTransaksi(): void
+}
+
+class Admin {
+    - id_admin: INT
+    - nama: VARCHAR
+    - email: VARCHAR
+    - username: VARCHAR
+    - password: VARCHAR
+    + login(): boolean
+    + terimaPesanan(): void
+    + prosesCetak(): void
+    + updateStatusTransaksi(): void
+    + lihatRiwayatTransaksi(): void
+}
+
+class Transaksi {
+    - id_transaksi: INT
+    - tanggal: DATE
+    - harga: DECIMAL
+    - status: VARCHAR
+    - id_mahasiswa: INT
+    + hitungTotalHarga(): DECIMAL
+    + catatTransaksi(): void
+    + updateStatus(): void
+}
+
+class Dokumen {
+    - id_dokumen: INT
+    - nama_file: VARCHAR
+    - jumlah_halaman: INT
+    - jenis_dokumen: VARCHAR
+    - id_mahasiswa: INT
+    + simpanFile(): void
+    + getDetail(): void
+}
+
+' Relasi antar kelas
+Mahasiswa "1" -- "0..*" Transaksi : melakukan
+Mahasiswa "1" -- "0..*" Dokumen : mengunggah
+Admin "1" -- "0..*" Dokumen : memproses
+Transaksi "1" -- "1..*" Dokumen : mencetak
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+title Component Diagram - Sistem Fotokopi dan Print Mahasiswa
+
+package "Aplikasi Fotokopi" {
+    
+    component "Modul Autentikasi" as Auth
+    component "Modul Pengelolaan Pengguna" as UserMgmt
+    component "Modul Dokumen" as Doc
+    component "Modul Transaksi" as Trans
+    component "Modul Pencetakan" as Print
+
+    ' Dependensi antar komponen
+    UserMgmt --> Auth : <<uses>>
+    Doc --> UserMgmt : <<uses>>
+    Trans --> Doc : <<uses>>
+    Print --> Doc : <<uses>>
+    Print --> Trans : <<uses>>
+}
+
+@enduml
