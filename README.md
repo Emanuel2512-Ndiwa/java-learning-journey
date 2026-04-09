@@ -1,29 +1,33 @@
+# 🚀 Java Learning Journey
 
+*(Scroll down for Indonesian version / Gulir ke bawah untuk versi Bahasa Indonesia)*
 
-# 📚 Java Learning Journey
-Halo! Selamat datang di repositori dokumentasi perjalanan belajar Java saya. Di sini, saya mendokumentasikan semua progres, latihan, dan proyek-proyek yang saya kerjakan untuk menguasai Java, baik dari materi perkuliahan maupun inisiatif belajar mandiri.
+## 🇬🇧 English Version
 
-Tujuan utama repositori ini adalah sebagai log personal untuk melacak pemahaman dan peningkatan kemampuan saya di Java. Selain itu, ini juga berfungsi sebagai portofolio yang menunjukkan dedikasi saya dalam pengembangan software.
+### About This Repository
+This repository is the personal timeline of my core Java learning journey. It acts as an evergreen foundation where I documented my transition from simple syntaxes to building complex algorithmic logic and mini CLI applications natively in Java.
 
-# 🚀 Apa Saja yang Akan Anda Temukan di Sini?
-Repositori ini diorganisir secara sistematis untuk memudahkan navigasi. Anda akan menemukan beberapa bagian utama:
-📖 belajar/ (Inti Pembelajaran Java)
-Folder ini adalah pusat dari perjalanan belajar saya, berisi materi dan kode untuk berbagai topik fundamental hingga lanjutan di Java.
-fundamentaljava/: Ini adalah fondasi saya dalam Java! Di sini tersimpan latihan dan implementasi konsep-konsep dasar seperti sintaks, tipe data, operator, control flow (perulangan dan percabangan), hingga pengenalan Object-Oriented Programming (OOP) dasar.
-data-structures/ (Akan Datang): Folder ini akan berisi implementasi berbagai struktur data seperti Array, Linked List (Singly, Doubly, Circular), Stack, Queue, Tree, dan Graph, beserta operasi-operasi dasarnya.
-algorithms/ (Akan Datang): Di sini akan saya kumpulkan berbagai algoritma penting seperti sorting, searching, rekursi, dan dynamic programming, semuanya diimplementasikan dalam Java.
-(Topik Lain): Seiring dengan eksplorasi belajar saya, akan ada penambahan topik seperti Java I/O, Multithreading, Java Collections Framework, dan lainnya.
+### Repository Structure
+I have refactored and organized all my practice files into distinct subject domains:
+1. **`LogicAndAlgorithms/`**: Contains raw algorithmic tests such as calculating Prime Numbers (`BilPrima`), Factorials (`Faktorial`), standard `FizzBuzz`, and `Modulus` logic.
+2. **`StringAndRegex/`**: A deep dive into text formatting and parsing. Contains extensive Regular Expression experiments (`Regex01` to `Regex06`), and `StringProcessing`.
+3. **`PatternPrinting/`**: Practicing nested loops (`for`/`while`) by drawing abstract console architectures like Stars (`Bintang.java`) and Pictures (`Gambar.java`).
+4. **`MiniApps/`**: Bringing the discrete logic together to form actual console programs like `AplikasiTodolist` (To-Do List), `Warung1` (Cashier System), and `kalkulator.java`.
+5. **`DateTime/`**: Mastering Java's built-in time components like `Clock.java` and `DateExample.java`.
 
-💡 mini-personal-projects/ (Proyek Mandiri)
-Ini adalah tempat di mana saya mengaplikasikan konsep yang telah dipelajari dalam skenario yang lebih praktis. Folder ini berisi proyek-proyek Java berskala kecil yang saya kerjakan secara mandiri di luar kurikulum formal.
+---
 
+## 🇮🇩 Bahasa Indonesia
 
-🛠️ Teknologi yang Digunakan
-Bahasa Pemrograman: Java 21.0.7 2025-04-15 LTS
-Integrated Development Environment (IDE):  VS Code
-Version Control: Git
+### Tentang Repositori Ini
+Repositori ini adalah rekam jejak pribadi (*Timeline*) dari fondasi panjang saya dalam menguasai bahasa **Java Fundamental**. Tempat ini bertindak sebagai lab kode (*Sandbox*) tempat saya beralih dari sekadar mencoba sintaks dasar hingga berhasil menstrukturisasi logika algoritma kompleks dan membangun aplikasi *Mini CLI*.
 
-🤝 Mari Terhubung
-Saya selalu terbuka untuk berdiskusi tentang Java, programming logic, atau berbagi pengalaman belajar. Jangan ragu untuk menghubungi atau memberikan masukan!
+### Struktur Pembelajaran (Struktur Folder Baru)
+Saya telah membersihkan dan mengkategorikan kumpulan file saya ke dalam struktur modular agar terlihat profesional:
+1. **`LogicAndAlgorithms/`** *(Logika & Algoritma)*: Berisi latihan memecahkan masalah matematis mesin murni, mulai dari mesin pencari Bilangan Prima (`BilPrima`), mesin `Faktorial`, algoritma legendaris `FizzBuzz`, hingga manipulasi sisa bagi `Modulus`.
+2. **`StringAndRegex/`** *(Manipulasi Teks)*: Tempat bedah presisi teks/tipe data String. Memuat rentetan panjang eksperimen *Regular Expression* (`Regex01` hingga `Regex06`) untuk menyortir abjad cerdas bersyarat.
+3. **`PatternPrinting/`** *(Mencetak Pola)*: Area pembiasaan logika "*Nested Loop*" atau perulangan ganda bersarang (`for` di dalam `for`) untuk mencetak bentuk segitiga Bintang (`Bintang.java`) maupun susunan ruang visual terminal (`Gambar.java`).
+4. **`MiniApps/`** *(Aplikasi Mini Terminal)*: Titik puncak simulasi di mana saya menggabungkan semua logika terpisah di atas menjadi sebuah program mandiri utuh, seperti pencatat daftar pekerjaan `AplikasiTodolist`, manajemen aplikasi kasir `Warung1`, hingga `kalkulator`.
+5. **`DateTime/`** *(Waktu Sistem)*: Kajian terhadap komponen waktu bawaan Java (`Clock.java` & `Date.java`).
 
-
+*Dibuat untuk selalu berkembang dan bertumbuh seiring matangnya perjalanan karier Software Engineering saya.*
